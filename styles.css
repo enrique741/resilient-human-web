@@ -1352,6 +1352,8 @@ h1, h2, h3, h4 {
     text-align: center;
     line-height: 1.5;
     padding: 12px 8px 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .sobre-gimnasta-caption strong {
