@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resilient Human | Fisioterapia & Readaptación</title>
+    <meta name="description" content="Fisioterapia deportiva, ecografía, terapias invasivas, ejercicio terapéutico y readaptación en Majadahonda, Madrid.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="img/foto-12-1200.jpg" fetchpriority="high" media="(max-width: 768px)">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="tel:+34628999116" class="nav-call" aria-label="Llamar al 628 999 116">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+            <a href="#hero" class="nav-logo">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/logo-nav-mobile.png">
+                    <img src="img/logo-full.png" width="1400" height="973" alt="Resilient Human · Fisioterapia & Readaptación" class="nav-logo-img">
+                </picture>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#metodo">Método</a></li>
+                <li><a href="#sobre">Sobre Nosotros</a></li>
+                <li><a href="#instalaciones">Instalaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#contacto" class="nav-cta">Pedir Cita</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero-video" id="hero">
+        <video class="hero-bg-video" autoplay muted loop playsinline poster="img/foto-12-1200.jpg">
+            <source src="img/hero-video.mp4" type="video/mp4" media="(min-aspect-ratio: 4/5)">
+            <source src="img/hero-video-mobile.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <button class="video-toggle" id="videoToggle" aria-label="Pausar vídeo de fondo">
+            <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5h3v14H8zM13 5h3v14h-3z"/></svg>
+            <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">Fisioterapia deportiva en Majadahonda</span>
+                <h1>De tu dolor a<br><span class="highlight">tu mejor versión</span></h1>
+                <p class="hero-sub">Fisioterapia basada en evidencia, ecografía musculoesquelética y readaptación personalizada para que vuelvas a rendir al máximo.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/34628999116" target="_blank" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Reservar por WhatsApp
+                    </a>
+                    <a href="#servicios" class="btn btn-outline">Nuestros Servicios</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">+1000</span>
+                        <span class="stat-label">Pacientes tratados</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Especialidades</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Personalizado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#que-es">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ¿Qué es Resilient Human? -->
+    <section class="quees" id="que-es">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Quiénes Somos</span>
+                <h2>¿Qué es <span class="highlight">Resilient Human</span>?</h2>
+            </div>
+            <div class="quees-row">
+                <div class="quees-text">
+                    <p><strong>Resilient Human</strong> es más que fisioterapia: es una forma de entender la salud, la recuperación y el rendimiento humano. Creemos que todos podemos ser más fuertes, adaptarnos y superar las lesiones con el tratamiento adecuado y aprendiendo a cuidar nuestro cuerpo.</p>
+                    <p>Combinamos una valoración fisioterápica precisa con técnicas avanzadas como <strong>ecografía, terapias invasivas ecoguiadas, punción seca, terapia manual</strong> y otras herramientas especializadas para abordar el dolor de manera efectiva.</p>
+                    <p>Además, incluimos <strong>ejercicio terapéutico, readaptación y planificación personalizada</strong> para que recuperes confianza en tu cuerpo y vuelvas a la actividad física de manera segura. Nuestro objetivo es que aprendas a gestionar tus molestias, prevenir lesiones y mantener un estilo de vida activo y saludable, potenciando tu bienestar físico a largo plazo.</p>
+                </div>
+                <div class="quees-img">
+                    <img src="img/foto-1.jpg" srcset="img/foto-1-800.jpg 800w, img/foto-1-1200.jpg 1200w, img/foto-1.jpg 1600w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 92vw, 520px" width="1600" height="1059" loading="lazy" decoding="async" alt="Andrés Martín, fisioterapeuta de Resilient Human">
+                </div>
+            </div>
+            <div class="quees-row reverse">
+                <div class="quees-img">
+                    <img src="img/foto-2.jpg" srcset="img/foto-2-800.jpg 800w, img/foto-2-1200.jpg 1200w, img/foto-2.jpg 1600w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 92vw, 520px" width="1600" height="1059" loading="lazy" decoding="async" alt="Entrenamiento supervisado en Resilient Human">
+                </div>
+                <div class="quees-text">
+                    <h3>Nuestra Misión</h3>
+                    <p>En <strong>Resilient Human</strong> creemos que cada lesión es una oportunidad para fortalecerte. Nuestra misión va más allá de tratar lesiones: apostamos por un <strong>enfoque integral y personalizado</strong>, que valora tanto el aspecto físico como el psicosocial.</p>
+                    <p>Te acompañamos y guiamos en todo el proceso de recuperación, de manera humana y cercana, porque cada persona es única y merece una atención adaptada a sus necesidades.</p>
+                    <p>Nuestro objetivo es que no solo superes el dolor, sino que recuperes <strong>confianza, autonomía y bienestar</strong> a largo plazo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2>Tratamientos especializados<br>para tu <span class="highlight">recuperación</span></h2>
+                <p class="section-desc">Combinamos las técnicas más avanzadas con un enfoque personalizado para cada paciente.</p>
+            </div>
+            <div class="servicios-grid">
+                <div class="servicio-card has-photo">
+                    <div class="servicio-head">
+                        <div class="servicio-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="22" stroke="#5BBEB5" stroke-width="2" fill="#5BBEB5" fill-opacity="0.08"/>
+                                <path d="M24 12v24M12 24h24" stroke="#5BBEB5" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Fisioterapia Deportiva</h3>
+                    </div>
+                    <div class="servicio-photo">
+                        <img src="img/foto-3.jpg" srcset="img/foto-3-800.jpg 800w, img/foto-3-1200.jpg 1200w, img/foto-3.jpg 1600w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 46vw, 380px" width="1600" height="1059" loading="lazy" decoding="async" alt="Fisioterapia deportiva - terapia manual">
+                    </div>
+                    <div class="servicio-body">
+                        <p>Tratamiento y prevención de lesiones deportivas con técnicas avanzadas de terapia manual y ejercicio terapéutico.</p>
+                    </div>
+                </div>
+                <div class="servicio-card has-photo">
+                    <div class="servicio-head">
+                        <div class="servicio-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="22" stroke="#5BBEB5" stroke-width="2" fill="#5BBEB5" fill-opacity="0.08"/>
+                                <rect x="14" y="16" width="20" height="16" rx="3" stroke="#5BBEB5" stroke-width="2.5"/>
+                                <path d="M20 20c0 0 2 4 4 4s4-8 4-8" stroke="#5BBEB5" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Ecografía Musculoesquelética</h3>
+                    </div>
+                    <div class="servicio-photo">
+                        <img src="img/foto-4.jpg" srcset="img/foto-4-800.jpg 800w, img/foto-4-1200.jpg 1200w, img/foto-4.jpg 1600w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 46vw, 380px" width="1600" height="1399" loading="lazy" decoding="async" alt="Ecografía musculoesquelética">
+                    </div>
+                    <div class="servicio-body">
+                        <p>Diagnóstico por imagen en tiempo real para evaluar tejidos blandos, articulaciones y guiar tratamientos con precisión.</p>
+                    </div>
+                </div>
+                <div class="servicio-card has-photo">
+                    <div class="servicio-head">
+                        <div class="servicio-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="22" stroke="#5BBEB5" stroke-width="2" fill="#5BBEB5" fill-opacity="0.08"/>
+                                <path d="M24 14v8l-2 10h4l-2-10z" stroke="#5BBEB5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="24" cy="36" r="2" fill="#5BBEB5"/>
+                            </svg>
+                        </div>
+                        <h3>Terapias Invasivas</h3>
+                    </div>
+                    <div class="servicio-photo">
+                        <img src="img/foto-5.jpg" srcset="img/foto-5-800.jpg 800w, img/foto-5-1200.jpg 1200w, img/foto-5.jpg 1600w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 46vw, 380px" width="1600" height="1059" loading="lazy" decoding="async" alt="Terapias invasivas ecoguiadas">
+                    </div>
+                    <div class="servicio-body">
+                        <p>Punción seca, electrólisis percutánea (EPI/EPTE) y neuromodulación para el tratamiento del dolor y la disfunción muscular.</p>
+                    </div>
+                </div>
+                <div class="servicio-card has-photo">
+                    <div class="servicio-head">
+                        <div class="servicio-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="22" stroke="#5BBEB5" stroke-width="2" fill="#5BBEB5" fill-opacity="0.08"/>
+                                <path d="M16 30c2-4 4-8 8-8s6 4 8 8" stroke="#5BBEB5" stroke-width="2.5" stroke-linecap="round"/>
+                                <circle cx="24" cy="18" r="4" stroke="#5BBEB5" stroke-width="2.5"/>
+                            </svg>
+                        </div>
+                        <h3>Ejercicio Terapéutico</h3>
+                    </div>
+                    <div class="servicio-photo">
+                        <img src="img/foto-6.jpg" srcset="img/foto-6-800.jpg 800w, img/foto-6-1200.jpg 1200w, img/foto-6.jpg 1600w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 46vw, 380px" width="1600" height="1300" loading="lazy" decoding="async" alt="Ejercicio terapéutico supervisado">
+                    </div>
+                    <div class="servicio-body">
+                        <p>Programas de ejercicio individualizados y supervisados para la recuperación funcional y la prevención de recaídas.</p>
+                    </div>
+                </div>
+                <div class="servicio-card has-photo">
+                    <div class="servicio-head">
+                        <div class="servicio-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="22" stroke="#5BBEB5" stroke-width="2" fill="#5BBEB5" fill-opacity="0.08"/>
+                                <path d="M18 28l4-8 4 6 4-10" stroke="#5BBEB5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 34h20" stroke="#5BBEB5" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Readaptación</h3>
+                    </div>
+                    <div class="servicio-photo">
+                        <img src="img/foto-7.jpg" srcset="img/foto-7-800.jpg 800w, img/foto-7-1200.jpg 1200w, img/foto-7.jpg 1600w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 46vw, 380px" width="1600" height="1059" loading="lazy" decoding="async" alt="Readaptación deportiva">
+                    </div>
+                    <div class="servicio-body">
+                        <p>Vuelta progresiva a la actividad deportiva con protocolos basados en evidencia y monitorización de la carga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Método -->
+    <section class="metodo" id="metodo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestro Método</span>
+                <h2>Cómo trabajamos <span class="highlight">contigo</span></h2>
+            </div>
+            <div class="metodo-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Valoración individualizada</h3>
+                        <p>Analizamos cada caso de forma global para entender el origen de la lesión y las necesidades reales de cada persona.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Diagnóstico preciso</h3>
+                        <p>Utilizamos razonamiento clínico y ecografía musculoesquelética para obtener una valoración más precisa y objetiva.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Tratamiento especializado</h3>
+                        <p>Combinamos terapia manual, ejercicio terapéutico y técnicas invasivas ecoguiadas para acelerar la recuperación.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Movimiento y readaptación</h3>
+                        <p>Trabajamos de forma activa para que vuelvas a moverte, entrenar y rendir con seguridad.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Prevención y rendimiento</h3>
+                        <p>Buscamos que entiendas tu cuerpo, aprendas a cuidarlo y reduzcas el riesgo de futuras lesiones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="sobre" id="sobre">
+        <div class="container sobre-content">
+            <div class="sobre-visual">
+                <div class="sobre-img-container">
+                    <img src="img/foto-8.jpg" srcset="img/foto-8-800.jpg 800w, img/foto-8-1200.jpg 1200w, img/foto-8.jpg 1600w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 400px, 490px" width="1600" height="1059" loading="lazy" decoding="async" alt="Andrés Martín Martín - Fisioterapeuta de Resilient Human">
+                </div>
+                <div class="sobre-gimnasta">
+                    <img src="img/foto-9.jpg" srcset="img/foto-9-800.jpg 800w, img/foto-9-1200.jpg 1200w, img/foto-9.jpg 1600w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 400px, 490px" width="1600" height="1064" loading="lazy" decoding="async" alt="Andrés Martín compitiendo con la selección española de gimnasia">
+                    <div class="sobre-gimnasta-caption"><strong>9 años</strong> en la selección española de gimnasia</div>
+                </div>
+                <div class="sobre-accent"></div>
+            </div>
+            <div class="sobre-text">
+                <span class="section-tag">Conoce al fisioterapeuta</span>
+                <h2>Andrés Martín Martín</h2>
+                <p class="sobre-role">Fisioterapeuta · Fundador de Resilient Human</p>
+                <p>Fisioterapeuta y fundador de <strong>Resilient Human</strong>, cuenta con más de 5 años de experiencia en el tratamiento de lesiones.</p>
+                <p>Fue <strong class="txt-teal">gimnasta de la selección española durante 9 años</strong>; su propia experiencia con lesiones y cirugías le permite entender el proceso de recuperación desde una perspectiva única.</p>
+                <p>Especializado en <strong>ejercicio terapéutico, ecografía y técnicas invasivas</strong>, trabaja con un enfoque basado en el razonamiento clínico y la individualización del tratamiento, ayudando tanto a deportistas como a pacientes con dolor a recuperar su funcionalidad y confianza.</p>
+
+                <h3 class="sobre-edu-title">Formación académica</h3>
+                <ul class="edu-list">
+                    <li class="edu-item">
+                        <div class="edu-year">2023 – 2024</div>
+                        <div class="edu-info">
+                            <strong>Máster en Ecografía y Fisioterapia Invasiva</strong>
+                            <span>Universidad Francisco de Vitoria</span>
+                        </div>
+                    </li>
+                    <li class="edu-item">
+                        <div class="edu-year">2022 – 2023</div>
+                        <div class="edu-info">
+                            <strong>Experto en Ecografía Musculoesquelética</strong>
+                            <span>Universidad Francisco de Vitoria</span>
+                        </div>
+                    </li>
+                    <li class="edu-item">
+                        <div class="edu-year">2016 – 2021</div>
+                        <div class="edu-info">
+                            <strong>Grado en Fisioterapia</strong>
+                            <span>Universidad Francisco de Vitoria</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="https://www.linkedin.com/in/andr%C3%A9s-mart%C3%ADn-mart%C3%ADn-206a05211/" target="_blank" class="linkedin-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    Ver perfil en LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instalaciones -->
+    <section class="instalaciones" id="instalaciones">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestras Instalaciones</span>
+                <h2>Un espacio pensado para tu <span class="highlight">recuperación</span></h2>
+                <p class="section-desc">Consulta de fisioterapia totalmente equipada y una sala de entrenamiento con material de última generación, dentro del centro deportivo Terra Training Club en Majadahonda.</p>
+            </div>
+            <div class="instalaciones-grid">
+                <div class="instal-photo">
+                    <img src="img/foto-10.jpg" srcset="img/foto-10-800.jpg 800w, img/foto-10-1200.jpg 1200w, img/foto-10.jpg 1600w" sizes="(max-width: 768px) 100vw, 480px" width="1600" height="1121" loading="lazy" decoding="async" alt="Recepción y consulta de Resilient Human">
+                </div>
+                <div class="instal-photo">
+                    <img src="img/foto-11.jpg" srcset="img/foto-11-800.jpg 600w, img/foto-11-1200.jpg 900w, img/foto-11.jpg 1200w" sizes="(max-width: 768px) 100vw, 480px" width="1200" height="1600" loading="lazy" decoding="async" alt="Sala de tratamiento de fisioterapia">
+                </div>
+                <div class="instal-photo">
+                    <img src="img/foto-12.jpg" srcset="img/foto-12-800.jpg 800w, img/foto-12-1200.jpg 1200w, img/foto-12.jpg 1600w" sizes="(max-width: 768px) 100vw, 480px" width="1600" height="1059" loading="lazy" decoding="async" alt="Sala de entrenamiento y readaptación">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram CTA -->
+    <section class="instagram-cta">
+        <div class="container">
+            <div class="insta-card">
+                <div class="insta-text">
+                    <h2>Síguenos en <span class="highlight">Instagram</span></h2>
+                    <p>Ejercicios, consejos y contenido de valor sobre fisioterapia y readaptación deportiva.</p>
+                </div>
+                <a href="https://www.instagram.com/resilienthuman_fisio/" target="_blank" class="btn btn-primary btn-insta">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    @resilienthuman_fisio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contacto</span>
+                <h2>¿Listo para <span class="highlight">empezar</span>?</h2>
+                <p class="section-desc">Pide tu cita y empieza tu proceso de recuperación con nosotros.</p>
+            </div>
+            <div class="contacto-grid">
+                <div class="contacto-cards">
+                    <a href="https://wa.me/34628999116" target="_blank" class="contacto-card whatsapp-card">
+                        <div class="contacto-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>628 999 116</p>
+                        <span class="card-action">Enviar mensaje →</span>
+                    </a>
+                    <a href="https://www.google.com/maps/place/Resilient+Human+%2F%2F+Fisioterapia+%26+Readaptaci%C3%B3n/@40.4793137,-3.8708326,543m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd4185d9b9585637:0x9713ecba6ebb00ee!8m2!3d40.4793137!4d-3.8685603!16s%2Fg%2F11nvdf495q" target="_blank" class="contacto-card">
+                        <div class="contacto-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3>Ubicación</h3>
+                        <p>C. Moncayo, 3<br>28220 Majadahonda, Madrid<br><span class="ubicacion-note">Dentro del centro deportivo Terra Training Club</span></p>
+                        <span class="card-action">Ver en mapa →</span>
+                    </a>
+                    <div class="contacto-card">
+                        <div class="contacto-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3>Horario</h3>
+                        <p>Lunes a Viernes<br>9:00 – 21:00</p>
+                        <span class="card-action">Con cita previa</span>
+                    </div>
+                </div>
+                <div class="contacto-map">
+                    <iframe src="https://www.google.com/maps?q=Resilient+Human+Fisioterapia+%26+Readaptaci%C3%B3n,+Calle+Moncayo+3,+Majadahonda&z=16&output=embed"
+                        width="100%" height="100%" style="border:0; border-radius:16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colaboradores -->
+    <section class="colaboradores">
+        <div class="container">
+            <p class="colab-title">Colaboramos con</p>
+            <div class="colab-logos">
+                <div class="colab-card colab-terra">
+                    <img src="img/logo-terra.jpg" width="800" height="625" alt="Terra Training Club" loading="lazy" decoding="async">
+                </div>
+                <div class="colab-card">
+                    <img src="img/logo-cemg.png" width="260" height="326" alt="Escuela Gimnasia Majadahonda" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="img/logo-full-dark.png" width="1600" height="1129" alt="Resilient Human" class="footer-logo-img" loading="lazy" decoding="async">
+                <p>Tu cuerpo tiene la capacidad de hacer frente a las adversidades, transformar el dolor en fuerza, recuperarse y salir adelante.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <a href="#que-es">Quiénes Somos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#metodo">Nuestro Método</a>
+                <a href="#instalaciones">Instalaciones</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-links">
+                <h4>Servicios</h4>
+                <a href="#servicios">Fisioterapia Deportiva</a>
+                <a href="#servicios">Ecografía</a>
+                <a href="#servicios">Terapias Invasivas</a>
+                <a href="#servicios">Readaptación</a>
+            </div>
+            <div class="footer-links">
+                <h4>Redes Sociales</h4>
+                <a href="https://www.instagram.com/resilienthuman_fisio/" target="_blank">Instagram</a>
+                <a href="https://wa.me/34628999116" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2025 <strong>Resilient Human®</strong><br class="mobile-only">
+                <span class="footer-rights"> · Todos los derechos reservados</span></p>
+        </div>
+    </footer>
+
+    <!-- Mobile sticky action bar (solo <=768px, tras pasar el hero) -->
+    <div class="mobile-action-bar" id="mobileActionBar" aria-hidden="true">
+        <a href="tel:+34628999116" class="mab-btn mab-call">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Llamar
+        </a>
+        <a href="https://wa.me/34628999116" target="_blank" class="mab-btn mab-wa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+        </a>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34628999116" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
