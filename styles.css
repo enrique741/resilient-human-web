@@ -2091,13 +2091,9 @@ h1, h2, h3, h4 {
     .mobile-action-bar { transition: none; }
 }
 
-/* Móvil: sin la foto grande del fisio tras el enlace de LinkedIn (petición cliente) */
+/* Móvil: foto del fisio bajo la bio, tarjeta de gimnasta debajo */
 @media (max-width: 768px) {
-    .sobre-img-container {
-        display: none;
-    }
-
     .sobre-gimnasta {
-        margin-top: 0;
+        margin-top: 16px;
     }
 }
