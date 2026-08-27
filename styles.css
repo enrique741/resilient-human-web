@@ -427,8 +427,8 @@ h1, h2, h3, h4 {
 
 .sobre-content {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 80px;
+    grid-template-columns: 400px 1fr;
+    gap: 72px;
     align-items: center;
 }
 
