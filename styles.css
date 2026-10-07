@@ -2097,3 +2097,200 @@ h1, h2, h3, h4 {
         margin-top: 16px;
     }
 }
+
+/* ========== RESEÑAS GOOGLE ========== */
+
+.resenas {
+    padding: 120px 0;
+    background: var(--white);
+}
+
+.resenas .section-header {
+    margin-bottom: 32px;
+}
+
+.resenas-summary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: fit-content;
+    margin: 0 auto 56px;
+    padding: 16px 28px;
+    background: var(--bg);
+    border: 1px solid rgba(45, 52, 54, 0.08);
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--charcoal);
+    transition: var(--transition);
+}
+
+.resenas-summary:hover {
+    border-color: var(--teal);
+    box-shadow: var(--shadow-sm);
+}
+
+.resenas-score {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.resenas-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.resenas-count {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.review-stars {
+    display: flex;
+    gap: 2px;
+}
+
+.review-stars svg {
+    width: 18px;
+    height: 18px;
+    fill: #FBBC04;
+}
+
+.resenas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    background: var(--bg);
+    border: 1px solid rgba(45, 52, 54, 0.06);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.review-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.review-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text);
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(45, 52, 54, 0.06);
+}
+
+.review-avatar {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--teal-light);
+    color: var(--teal-dark);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.review-name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.review-name small {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.resenas-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 48px;
+}
+
+@media (max-width: 1024px) {
+    .resenas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .resenas {
+        padding: 64px 0;
+    }
+
+    .resenas-summary {
+        margin-bottom: 32px;
+        padding: 12px 20px;
+        gap: 12px;
+    }
+
+    .resenas-score {
+        font-size: 2rem;
+    }
+
+    /* Carrusel horizontal con scroll-snap */
+    .resenas-grid {
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 -24px;
+        padding: 4px 24px 12px;
+        scrollbar-width: none;
+    }
+
+    .resenas-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .review-card {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+        padding: 24px;
+    }
+
+    .review-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .review-text {
+        font-size: 16px;
+    }
+
+    .resenas-actions {
+        flex-direction: column;
+        margin-top: 32px;
+    }
+
+    .resenas-actions .btn {
+        justify-content: center;
+        min-height: 48px;
+    }
+}

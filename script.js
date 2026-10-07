@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Scroll animations
     const fadeElements = document.querySelectorAll(
-        '.servicio-card, .step, .contacto-card, .sobre-text, .sobre-visual, .insta-card, .quees-text, .quees-img, .instal-photo, .colab-card'
+        '.servicio-card, .step, .contacto-card, .review-card, .resenas-summary, .sobre-text, .sobre-visual, .insta-card, .quees-text, .quees-img, .instal-photo, .colab-card'
     );
 
     fadeElements.forEach(el => el.classList.add('fade-in'));
